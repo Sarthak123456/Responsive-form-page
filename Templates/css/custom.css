@@ -1,0 +1,367 @@
+
+/**
+{
+	margin: 0px;
+	padding: 0px;
+}*/
+
+*
+{
+		transition: all 1s linear;
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.small
+{
+	font-size: 0.7em!important;
+	color: silver;
+	font-weight: 200!important;
+}
+.height
+{
+	height: auto;
+}
+
+.description{
+	font-size: 1.5em;
+	margin: 0px;
+}
+
+article{
+	margin: 45px 0;
+	font-size: 1.3em;
+}
+
+article > *
+{
+	margin-bottom: 0px!important;
+}
+.brand
+{
+	padding: 40px;
+}
+
+.hide
+{
+	display: none;
+}
+.wells
+{
+	height: 230px;
+	background: url("../img/office_2.jpeg");
+	background-size: auto;
+	background-position: center;
+	margin: -10px;
+	padding: 0px;
+	margin-bottom: 40px;
+
+}
+
+.colapsed
+{
+	font-size: 1.2em;
+	margin-bottom: 50px;
+	height: 80px;
+	max-height: 500px;
+	overflow: hidden;
+}
+
+.more
+{
+	color: skyblue;
+}
+
+.less
+{	
+	font-size: 1.2em;
+	color: skyblue;
+}
+
+.inline
+{
+	display: inline;
+}
+
+.thin
+{
+	font-weight: 400;
+}
+
+.title
+{
+	font-size: 1.4em;
+	margin-bottom: 50px;
+}
+.form-group {
+  position:relative;  
+  margin-bottom: 100px!important;
+
+
+  & + .form-group {
+    margin-top: 300px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  top: 10px;
+  color: #999;
+  background-color: #fff;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .form-label {
+  transform: translateY(-125%);
+  font-size: .75em;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 70%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+  
+  &:focus {
+    box-shadow: 0 2px 0 0 blue;
+  }
+}
+
+.form-input.filled {
+  box-shadow: 0 2px 0 0 skyblue;
+}
+
+.about
+{
+	background: #f5f5f5;
+	padding: 30px 125px;
+	margin: 0 -10px;
+}
+ .about > * 
+ {
+ 	margin: 30px;
+ }
+.fab {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin: -10px 6px;
+  border-radius: 50%;
+}
+
+.fab:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook-f {
+  background: #3B5998;
+  color: white;
+      width: 44px;
+    height: 43px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.right
+{
+	display: inline;
+	float: right;
+}
+
+
+ footer{
+ 	padding: 25px 100px;
+ 	background: #3c3d41;
+ 	color: silver;
+ 	margin:  -10px;
+ }
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.default {
+  border: 2px solid skyblue!important;
+  color: skyblue;
+  background-color: white;
+  padding: 10px 20px!important;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 100;
+  width: 85%;
+}
+
+.button
+{
+	width: 35%;
+	background-color: #92571e!important;
+	border-color:#92571e!important;
+	border-radius: 50px!important;
+	padding: 20px!important;
+	margin-bottom: 100px;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.seven
+{
+	flex:0 0 34%!important;
+	padding: 22px!important;
+}
+
+.copy{
+	margin: 0 55px;
+}
+.vertical
+{
+	margin: 10px;
+}
+
+@media (max-width: 576px) {
+
+	.brand{
+		padding: 10px;
+		width: 200px;
+		margin-bottom: 20px;
+	}
+
+	.form-input
+	{
+		width:100%;
+	}
+
+	.seven{
+		flex: 0 0 89%!important;
+    padding: 22px!important;
+    margin: 20px;
+	}
+
+	.button {
+    width: 100%;
+	}
+
+	.default
+	{
+		width:100%;
+	}
+
+	.about {
+    background: #f5f5f5;
+    padding: 25px 0px;
+    margin: none;
+	}
+
+	footer {
+    padding: 15px 0;
+    	}
+
+    	.copy {
+    margin: 0 15px;
+    font-size: 0.4em;
+}
+.vertical {
+     margin: 2px; 
+}
+.right {
+    display: inline;
+     float: none;
+}
+
+.fa-facebook-f {
+    width: 27px;
+    height: 27px;
+}
+
+.fab {
+    padding: 4px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width:760px) {
+
+.form-input {
+    width: 100%;	
+	}	
+
+	.seven {
+    flex: 0 0 94%!important;
+    padding: 22px!important;
+    margin: 13px;
+}
+
+.default {
+    width: 100%!important;
+}
+
+.button{
+	width: 100%;
+}
+.about {
+    background: #f5f5f5;
+    padding: 50px 50px;
+    margin: 0 -10px;
+}
+.copy {
+    margin: 0 15px;
+}
+
+footer {
+    padding: 23px 3px;
+}
+.vertical {
+    margin: 4px;
+}
+.right{
+	float: none;
+}
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 761px) {
+
+.copy{
+	margin: 0 15px;
+}
+	
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+
